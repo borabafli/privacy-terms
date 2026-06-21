@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Dream AI</title>
+  <meta name="description" content="How Dream AI collects, uses, stores, and protects your information." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-header">
+    <div class="container">
+      <p class="crumbs"><a href="index.html">Dream AI</a> · Privacy Policy</p>
+      <h1>Privacy Policy</h1>
+      <p class="updated">Effective date: 22 June 2026 · Last updated: 22 June 2026</p>
+    </div>
+  </div>
+
+  <main class="container">
+    <p>
+      This Privacy Policy explains how <strong>Bora Bafli</strong> ("we", "us") collects, uses, stores, and
+      protects information when you use the <strong>Dream AI</strong> mobile application (the "App").
+      Dream AI is an AI-powered photo and video generation app that lets you create images and videos from
+      text prompts using the latest AI models.
+    </p>
+
+    <div class="callout">
+      <strong>Quick summary:</strong> Dream AI does not require you to create an account with an email address.
+      We collect only what is necessary to run the App. We do not sell your data.
+      Your prompts and uploaded images are sent to AI providers solely to generate your content — they are not
+      used to train AI models. You can delete all your data at any time.
+    </div>
+
+    <h2>1. Who is the data controller?</h2>
+    <p>
+      Bora Bafli — Developer<br/>
+      <a href="mailto:borabafli@gmail.com">borabafli@gmail.com</a>
+    </p>
+
+    <h2>2. Information we collect</h2>
+
+    <h3>2.1 Information you provide</h3>
+    <ul>
+      <li><strong>Prompts and uploaded images or videos:</strong> when you generate content, the text prompt and any reference image you upload are sent to our backend and forwarded to AI providers to produce your result. We temporarily store the output (generated image or video) in cloud storage so you can download it; it is linked to your anonymous account.</li>
+      <li><strong>Support messages</strong> you send to <a href="mailto:borabafli@gmail.com">borabafli@gmail.com</a>.</li>
+    </ul>
+
+    <h3>2.2 Information collected automatically</h3>
+    <ul>
+      <li><strong>Anonymous account identifier:</strong> when you first launch the App, we create an anonymous user session via Supabase. This gives you a randomly generated unique ID (no name, email, or phone number is required). Your coin balance and generation history are linked to this ID.</li>
+      <li><strong>Generation history:</strong> metadata about your past generations (model used, prompt, output URL, timestamp) stored in your anonymous profile so you can re-download or share your creations.</li>
+      <li><strong>Coin balance and transaction records:</strong> how many coins you have and how they were spent or granted (via purchases or PRO subscription).</li>
+      <li><strong>Subscription status</strong> from RevenueCat (whether you have an active Dream AI PRO entitlement, plan type, renewal status). We do not receive your full payment card or banking details — those stay with Apple.</li>
+      <li><strong>Analytics events</strong> (screen views, feature usage, generation counts) collected by PostHog to help us improve the App. These events are pseudonymous, linked to your anonymous ID, and contain no content of your prompts or generated images.</li>
+      <li><strong>Crash and diagnostic logs</strong> if you have enabled Apple's "Share With App Developers" setting. These contain device model, OS version, and a stack trace — not the content of your prompts.</li>
+    </ul>
+
+    <h3>2.3 Information we do <em>not</em> collect</h3>
+    <ul>
+      <li>We do not collect your name, email address, phone number, or any other personally identifying information unless you contact support.</li>
+      <li>We do not access your contacts, calendar, location, or browsing history.</li>
+      <li>We do not embed advertising SDKs and do not use the App Tracking Transparency framework — we do not track you across other companies' apps or websites.</li>
+      <li>We do not collect your raw payment-method details.</li>
+    </ul>
+
+    <h2>3. Camera and photo library access</h2>
+    <p>
+      Some AI generation flows let you upload a reference image from your camera or photo library. The App requests
+      camera and photo-library permission <strong>only when you choose to add a reference image</strong>. The
+      selected photo is uploaded over an encrypted connection to our backend solely to generate your requested content.
+      We do not scan, index, or retain photos beyond what is needed for the generation request.
+    </p>
+
+    <h2>4. How we use your information</h2>
+    <table>
+      <tr><th>Purpose</th><th>What we use</th><th>Legal basis (GDPR)</th></tr>
+      <tr>
+        <td>Generate AI images and videos from your prompt (and optional reference image).</td>
+        <td>Prompt text, uploaded reference image.</td>
+        <td>Performance of the contract you accept by using the App.</td>
+      </tr>
+      <tr>
+        <td>Store and serve your generated content so you can download, share, or revisit it.</td>
+        <td>Generated image/video files, generation metadata.</td>
+        <td>Performance of the contract.</td>
+      </tr>
+      <tr>
+        <td>Manage your coin balance and deduct coins per generation.</td>
+        <td>Anonymous account ID, coin balance, transaction records.</td>
+        <td>Performance of the contract; legitimate interest in fraud prevention.</td>
+      </tr>
+      <tr>
+        <td>Operate Dream AI PRO subscriptions and check entitlements.</td>
+        <td>RevenueCat customer ID, subscription status.</td>
+        <td>Performance of the contract.</td>
+      </tr>
+      <tr>
+        <td>Improve reliability and product quality.</td>
+        <td>Pseudonymous analytics events, crash logs.</td>
+        <td>Legitimate interest in maintaining a working product.</td>
+      </tr>
+      <tr>
+        <td>Respond to support requests.</td>
+        <td>Email address, message content.</td>
+        <td>Legitimate interest in helping our users.</td>
+      </tr>
+    </table>
+
+    <h2>5. AI providers and third-party processors</h2>
+    <p>
+      When you generate content, your prompt (and any uploaded reference image) is routed through our backend
+      (Supabase Edge Functions) to one or more AI providers depending on the model you selected:
+    </p>
+    <ul>
+      <li><strong>fal.ai</strong> — used for the majority of image and video generation models (Flux, Wan, Kling, Veo, Pika, Hailuo, PixVerse, and others). Your prompt and any reference image are sent to fal.ai solely to generate the requested output. fal.ai does not use your inputs to train AI models. <a href="https://fal.ai/privacy" target="_blank" rel="noopener">fal.ai privacy policy</a>.</li>
+      <li><strong>Google (Gemini API)</strong> — used for certain image generation and editing models. Prompt text and reference images may be sent to Google's Gemini API. Google does not use API inputs to train its models under the API terms. <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">Gemini API terms</a>.</li>
+    </ul>
+    <p>
+      Your data is processed by these providers only as needed to fulfill your generation request. We have or rely on
+      data-processing terms with each provider that prohibit using your inputs to train AI models.
+    </p>
+
+    <h2>6. Where your data lives</h2>
+    <ul>
+      <li><strong>On your device:</strong> your generation history is also cached locally (in AsyncStorage) for fast access and offline viewing.</li>
+      <li><strong>In the cloud:</strong> Supabase project (cloud-hosted, with encryption in transit via TLS 1.2+ and at rest). Row-Level Security policies ensure one user can never read another user's data.</li>
+      <li><strong>Cloud storage:</strong> generated images and videos are stored in a Supabase Storage bucket linked to your anonymous account.</li>
+      <li><strong>Apple:</strong> handles all in-app purchases. We never see your card details.</li>
+      <li><strong>RevenueCat:</strong> stores anonymized subscription state.</li>
+      <li><strong>PostHog:</strong> stores pseudonymous usage events in the EU region.</li>
+    </ul>
+
+    <h2>7. Sharing with third parties</h2>
+    <p>We share information only with the processors required to operate Dream AI. We do not sell, rent, or trade your data to anyone. We never share data with advertising networks.</p>
+    <table>
+      <tr><th>Processor</th><th>Purpose</th><th>What is shared</th></tr>
+      <tr>
+        <td><strong>Supabase Inc.</strong></td>
+        <td>Database, anonymous authentication, storage, edge functions.</td>
+        <td>Anonymous user ID, generation metadata, generated content files.</td>
+      </tr>
+      <tr>
+        <td><strong>fal.ai</strong></td>
+        <td>AI image and video generation (most models).</td>
+        <td>Prompt text, optional reference image. Not retained for training.</td>
+      </tr>
+      <tr>
+        <td><strong>Google LLC (Gemini API)</strong></td>
+        <td>AI image generation and editing (Gemini models).</td>
+        <td>Prompt text, optional reference image. Not retained for training.</td>
+      </tr>
+      <tr>
+        <td><strong>RevenueCat, Inc.</strong></td>
+        <td>Subscription and coin-pack management.</td>
+        <td>Anonymized subscription state and customer ID.</td>
+      </tr>
+      <tr>
+        <td><strong>Apple Inc.</strong></td>
+        <td>App Store payments, in-app purchases.</td>
+        <td>Transaction info. Card details stay with Apple.</td>
+      </tr>
+      <tr>
+        <td><strong>PostHog Inc.</strong></td>
+        <td>Product analytics and crash reporting.</td>
+        <td>Pseudonymous usage events (no prompt content or images).</td>
+      </tr>
+    </table>
+
+    <h2>8. International transfers</h2>
+    <p>
+      Dream AI uses cloud providers located in multiple regions (United States, EU). Your data may be transferred
+      outside your country of residence. Where required (e.g. for EU/UK users), we rely on the Standard
+      Contractual Clauses or equivalent safeguards offered by our processors.
+    </p>
+
+    <h2>9. How long we keep your data</h2>
+    <ul>
+      <li><strong>Generated images and videos:</strong> kept until you delete them from the App, or until you delete your account.</li>
+      <li><strong>Generation metadata and coin history:</strong> kept until you delete your account.</li>
+      <li><strong>Subscription records:</strong> kept for up to 7 years for tax and accounting compliance, even after account deletion.</li>
+      <li><strong>Support emails:</strong> kept for up to 24 months after the conversation ends.</li>
+      <li><strong>Analytics events:</strong> retained by PostHog per their default retention policy (typically 1 year).</li>
+      <li><strong>Crash logs:</strong> kept for up to 30 days.</li>
+    </ul>
+
+    <h2>10. Your rights</h2>
+    <p>You have the right to:</p>
+    <ul>
+      <li>Access the data we hold about you.</li>
+      <li>Delete your account and all associated generation data (from within the App, or see our <a href="account-deletion.html">Account Deletion</a> page).</li>
+      <li>Request a copy of your data.</li>
+      <li>Object to processing or withdraw consent.</li>
+      <li>Lodge a complaint with your local data protection authority.</li>
+    </ul>
+    <p>Send any privacy request to <a href="mailto:borabafli@gmail.com">borabafli@gmail.com</a>. We respond within 30 days.</p>
+
+    <h2>11. Children</h2>
+    <p>
+      Dream AI is not directed to children under 13 (or under 16 in the EU). We do not knowingly collect
+      personal data from children. If you believe a child is using Dream AI, contact us and we will delete
+      the associated data.
+    </p>
+
+    <h2>12. Security</h2>
+    <p>
+      We use TLS for all network traffic, row-level security in the database, and scoped service tokens for
+      backend functions. Generated content is stored in access-controlled storage buckets. No system is
+      perfectly secure, but we follow industry best practices.
+    </p>
+
+    <h2>13. Changes to this policy</h2>
+    <p>
+      If we make material changes, we will update the "Last updated" date at the top and, where appropriate,
+      surface a notice inside the App. Continued use after the change means you accept the updated policy.
+    </p>
+
+    <h2>14. Contact</h2>
+    <p>
+      Bora Bafli — Developer<br/>
+      <a href="mailto:borabafli@gmail.com">borabafli@gmail.com</a>
+    </p>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> Dream AI · <a href="index.html">Home</a> · <a href="terms-of-service.html">Terms</a> · <a href="support.html">Support</a> · <a href="account-deletion.html">Account Deletion</a></p>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

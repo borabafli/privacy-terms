@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Help &amp; Support — Dream AI</title>
+  <meta name="description" content="Get help with Dream AI: FAQs, troubleshooting, and how to contact us." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-header">
+    <div class="container">
+      <p class="crumbs"><a href="index.html">Dream AI</a> · Support</p>
+      <h1>Help &amp; Support</h1>
+      <p class="updated">We usually reply within 1–2 business days.</p>
+    </div>
+  </div>
+
+  <main class="container">
+    <div class="callout">
+      <strong>Need help?</strong> Email us at
+      <a href="mailto:borabafli@gmail.com?subject=Dream%20AI%20Support">borabafli@gmail.com</a>.
+      Please include your iOS version, Dream AI version (Profile → Version), and a short description of
+      what happened.
+    </div>
+
+    <h2>Getting started</h2>
+
+    <h3>How do I generate an image?</h3>
+    <p>Tap the <strong>+</strong> button in the center of the tab bar, choose <strong>Image Generation</strong>, select an AI model, enter your prompt, and tap <strong>Generate</strong>. The result appears in your History when ready.</p>
+
+    <h3>How do I generate a video?</h3>
+    <p>Tap <strong>+</strong>, choose <strong>Video Generation</strong>, pick a model, write your prompt, configure duration and resolution, and tap <strong>Generate</strong>. Video generation takes longer than images — keep the app open until it completes.</p>
+
+    <h3>Can I use a reference image?</h3>
+    <p>Yes — many models support an optional reference photo. Tap <strong>Add Photo</strong> inside the generation screen to pick one from your library or take one with your camera. Granting photo library or camera permission is required.</p>
+
+    <h3>What AI models are available?</h3>
+    <p>Dream AI includes models from fal.ai (Flux, Wan, Kling, Veo, Pika, Hailuo, PixVerse, and more) and Google Gemini. The Home feed shows all available models with coin costs and PRO requirements.</p>
+
+    <h2>Coins &amp; Dream AI PRO</h2>
+
+    <h3>What are coins?</h3>
+    <p>Coins are the in-app currency for generating content. Each model shows its coin cost before you generate. You start with a small free coin balance, and can buy more or subscribe to PRO for a monthly coin allowance.</p>
+
+    <h3>What does PRO include?</h3>
+    <ul>
+      <li>A monthly coin allowance refreshed every billing period.</li>
+      <li>Access to PRO-tier AI models not available on the free plan.</li>
+      <li>Priority generation queue.</li>
+    </ul>
+
+    <h3>How do I restore a previous purchase?</h3>
+    <p>In the App, go to <strong>Account → Restore Purchases</strong>. Make sure you are signed into the same Apple ID that made the original purchase.</p>
+
+    <h3>How do I cancel my subscription?</h3>
+    <p>Open <em>iOS Settings → [your name] → Subscriptions → Dream AI</em>, then tap <strong>Cancel Subscription</strong>. Your PRO features remain active until the end of the current billing period. Cancelling does not delete your data.</p>
+
+    <h3>How do I get a refund?</h3>
+    <p>Refunds for App Store purchases are handled by Apple. Visit <a href="https://reportaproblem.apple.com/" target="_blank" rel="noopener">reportaproblem.apple.com</a> and select the Dream AI charge.</p>
+
+    <h3>I ran out of coins mid-generation — will I be charged?</h3>
+    <p>Coins are reserved before a generation starts. If you don't have enough coins, the generation will not start and no coins are deducted. If a generation fails due to a provider error, your coins are automatically refunded.</p>
+
+    <h2>Account &amp; data</h2>
+
+    <h3>Do I need to create an account?</h3>
+    <p>No. Dream AI uses an anonymous account created automatically when you first launch the App. Your history and coins are linked to this account on your device. No email or password is required.</p>
+
+    <h3>What happens if I reinstall the App?</h3>
+    <p>Your anonymous account is tied to your device. Uninstalling the App may make your generation history and coin balance unavailable on that device. If you have an active PRO subscription, you can restore it via <strong>Restore Purchases</strong> on any device with the same Apple ID.</p>
+
+    <h3>How do I delete my account and data?</h3>
+    <p>See the <a href="account-deletion.html">Account &amp; Data Deletion</a> page for full instructions. You can also delete from <em>Account → Delete Account</em> inside the App.</p>
+
+    <h2>Generation issues</h2>
+
+    <h3>My generation failed.</h3>
+    <p>If a generation fails due to a provider error, your coins are automatically refunded. Try again with a different prompt or model. If failures persist, please email support with the model name and a description of your prompt.</p>
+
+    <h3>The result doesn't look right.</h3>
+    <p>AI generation is non-deterministic. Try refining your prompt with more detail, adjusting parameters (size, duration), or using a different model. The Home feed shows example results for each model to help calibrate expectations.</p>
+
+    <h3>Generation is taking too long.</h3>
+    <p>Video generation can take several minutes depending on model and resolution. Keep the App open — leaving the App in the background may interrupt polling. If a generation never completes, wait a few minutes and check your History; in rare cases you may need to try again.</p>
+
+    <h3>I can't upload a photo.</h3>
+    <p>Make sure you have granted Dream AI access to your photo library or camera in <em>iOS Settings → Dream AI → Photos / Camera</em>.</p>
+
+    <h2>Privacy &amp; security</h2>
+    <p>Read our <a href="privacy-policy.html">Privacy Policy</a> for full details. Short version: we use anonymous accounts (no email needed), your prompts and images are sent to AI providers only to generate your content, and we never sell your data.</p>
+
+    <h2>Contact</h2>
+    <p>
+      Bora Bafli — Developer<br/>
+      <a href="mailto:borabafli@gmail.com?subject=Dream%20AI%20Support">borabafli@gmail.com</a>
+    </p>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> Dream AI · <a href="index.html">Home</a> · <a href="privacy-policy.html">Privacy</a> · <a href="terms-of-service.html">Terms</a> · <a href="account-deletion.html">Account Deletion</a></p>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,210 @@
+:root {
+  --bg: #f8f7ff;
+  --card: #ffffff;
+  --text: #1a1830;
+  --muted: #6b6882;
+  --primary: #7C5CFC;
+  --primary-dark: #5b3ed4;
+  --primary-soft: #ede9fe;
+  --secondary: #4F7DF4;
+  --border: #e8e4f0;
+  --danger: #dc2626;
+  --max: 760px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color .15s ease;
+}
+a:hover { border-bottom-color: var(--primary); }
+
+/* ── Hero (index.html only) ── */
+.hero {
+  padding: 72px 0 40px;
+  background: linear-gradient(160deg, #f0ecff 0%, var(--bg) 100%);
+  border-bottom: 1px solid var(--border);
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+.brand-mark {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #7C5CFC 0%, #4F7DF4 100%);
+  box-shadow: 0 6px 20px rgba(124, 92, 252, 0.35);
+}
+.brand-name {
+  font-weight: 800;
+  font-size: 22px;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, #7C5CFC 0%, #4F7DF4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hero h1 {
+  font-size: 38px;
+  line-height: 1.15;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  margin: 0 0 16px;
+}
+.hero .lede {
+  font-size: 18px;
+  color: var(--muted);
+  margin: 0;
+  max-width: 540px;
+}
+
+/* ── Sub-page header ── */
+.page-header {
+  padding: 56px 0 24px;
+  border-bottom: 1px solid var(--border);
+  background: var(--card);
+}
+.page-header .crumbs {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+.page-header h1 {
+  font-size: 32px;
+  font-weight: 800;
+  margin: 0 0 6px;
+  letter-spacing: -0.02em;
+}
+.page-header .updated {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0;
+}
+
+main {
+  padding: 32px 0 64px;
+}
+
+main h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 36px 0 12px;
+  letter-spacing: -0.01em;
+  color: var(--primary-dark);
+}
+main h3 {
+  font-size: 17px;
+  font-weight: 700;
+  margin: 24px 0 8px;
+}
+main p { color: var(--text); }
+main ul, main ol { padding-left: 22px; }
+main li { margin-bottom: 6px; color: var(--text); }
+
+.callout {
+  background: var(--primary-soft);
+  border-left: 3px solid var(--primary);
+  border-radius: 8px;
+  padding: 14px 18px;
+  margin: 20px 0;
+  color: #4c1d95;
+  font-size: 15px;
+}
+.callout-warn {
+  background: #fef2f2;
+  border-left-color: var(--danger);
+  color: #7f1d1d;
+}
+
+/* ── Index link grid ── */
+.links { margin-top: 16px; }
+.link-grid {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.link-grid a {
+  display: block;
+  padding: 18px 20px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--card);
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+  transition: border-color .15s ease, box-shadow .15s ease;
+}
+.link-grid a:hover {
+  border-color: var(--primary);
+  box-shadow: 0 4px 12px rgba(124, 92, 252, 0.12);
+}
+
+/* ── Contact card ── */
+.contact {
+  margin-top: 16px;
+  padding: 20px 24px;
+  background: var(--card);
+  border-radius: 14px;
+  border: 1px solid var(--border);
+}
+
+/* ── Tables ── */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  font-size: 15px;
+}
+table th, table td {
+  border: 1px solid var(--border);
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+table th {
+  background: #f0ecff;
+  font-weight: 700;
+}
+
+footer {
+  padding: 24px 0 48px;
+  color: var(--muted);
+  font-size: 13px;
+  text-align: center;
+  border-top: 1px solid var(--border);
+}
+footer a { border-bottom: none; }
+
+@media (max-width: 540px) {
+  .hero { padding: 52px 0 28px; }
+  .hero h1 { font-size: 30px; }
+  .page-header h1 { font-size: 26px; }
+  .link-grid { grid-template-columns: 1fr; }
+}
